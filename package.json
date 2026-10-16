@@ -1,0 +1,16 @@
+{
+  "name": "afk-reactionlog-vc-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Small Discord bot: /afk + ?afk, reaction logging, permanent voice-channel presence. No database.",
+  "main": "index.js",
+  "scripts": { "start": "node index.js",
+    "deploy": "node scripts/deploy-commands.js", "test": "node --test tests/*.test.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.4.5",
+    "libsodium-wrappers": "^0.8.4"
+  }
+}
