@@ -1,9 +1,11 @@
 # afk-reactionlog-vc-bot
 
-Small self-hosted Discord bot, three things only:
+Small self-hosted Discord bot:
 - `/afk [reason]` and `?afk [reason]` — AFK status, mention notices, leave-a-message button
 - Reaction logging — every emoji add/remove posted as an embed to a log channel
 - Stays in one voice channel 24/7 (auto-rejoins if kicked/moved/disconnected)
+- `!debate` and `/debate` — random debate prompts, with category and difficulty filters
+- `!philosophy` and `/philosophy` — open-ended philosophical prompts
 
 No database, no AI, no external services. Runs on your own bot account.
 
@@ -31,3 +33,6 @@ Keep it alive: `npm i -g pm2 && pm2 start index.js --name bot && pm2 save`, then
 - Reaction-log config is stored in `data/reactionlog.json` (created on first use, gitignored).
 - AFK status is in memory; a restart clears it.
 - Tests: `npm test`.
+
+## Debate and philosophy
+`!debate` chooses from 132 debate topics; `!philosophy` chooses from 40 open-ended prompts. You can optionally include a category or difficulty after the prefix. Slash commands include drop-down options for both. Difficulty: `easy`, `2 braincells needed`, `mind boggling`. To register slash commands after changing them, run `npm run deploy` with the Discord environment variables set.
