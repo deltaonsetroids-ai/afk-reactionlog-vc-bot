@@ -5,6 +5,7 @@ const afkCommands = require('./commands/afk')
 const reactionlog = require('./lib/reactionlog')
 const reactionlogCommands = require('./commands/reactionlog')
 const voiceKeepalive = require('./lib/voice-keepalive')
+const conversation = require('./commands/conversation')
 
 // Optional guild lock, same as the full bot: unset = every server allowed.
 const ALLOWED_GUILD_IDS = new Set(
@@ -52,6 +53,7 @@ client.on(Events.MessageCreate, async (message) => {
   if (message.author.bot) return
   if (message.guildId && !isGuildApproved(message.guildId)) return
   await afk.handleMessage(message).catch((error) => console.error('AFK handler error:', error))
+  await conversation.handleMessage(message).catch((error) => console.error('Conversation handler error:', error))
 })
 
 client.on(Events.InteractionCreate, async (interaction) => {
@@ -75,7 +77,9 @@ client.on(Events.InteractionCreate, async (interaction) => {
     ? afkCommands
     : reactionlogCommands.REACTIONLOG_COMMANDS.has(interaction.commandName)
       ? reactionlogCommands
-      : null
+      : ['debate', 'philosophy'].includes(interaction.commandName)
+        ? conversation
+        : null
   if (!handler) return // other global commands belong to the full bot; stay silent
 
   try {
