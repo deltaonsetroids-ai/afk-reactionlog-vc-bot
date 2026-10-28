@@ -671,6 +671,366 @@ const BANK = [
     "category": "logic",
     "difficulty": "easy",
     "question": "Can a paradox reveal a flaw in a question rather than in reality?"
+  },
+  {
+    "kind": "debate",
+    "category": "ethics",
+    "difficulty": "easy",
+    "question": "Should telling a painful truth always be preferred over a comforting lie?"
+  },
+  {
+    "kind": "debate",
+    "category": "ethics",
+    "difficulty": "2 braincells needed",
+    "question": "Should someone receive credit for doing the right thing for selfish reasons?"
+  },
+  {
+    "kind": "debate",
+    "category": "ethics",
+    "difficulty": "mind boggling",
+    "question": "Can an action be both selfish and generous?"
+  },
+  {
+    "kind": "debate",
+    "category": "ethics",
+    "difficulty": "easy",
+    "question": "Do future generations have rights today?"
+  },
+  {
+    "kind": "debate",
+    "category": "ethics",
+    "difficulty": "2 braincells needed",
+    "question": "Should promises be kept when circumstances radically change?"
+  },
+  {
+    "kind": "debate",
+    "category": "ethics",
+    "difficulty": "mind boggling",
+    "question": "Is being neutral during a disagreement always fair?"
+  },
+  {
+    "kind": "debate",
+    "category": "ethics",
+    "difficulty": "easy",
+    "question": "Should mistakes made as a child affect adult opportunities?"
+  },
+  {
+    "kind": "debate",
+    "category": "ethics",
+    "difficulty": "2 braincells needed",
+    "question": "Can good outcomes justify unfair methods?"
+  },
+  {
+    "kind": "debate",
+    "category": "ethics",
+    "difficulty": "mind boggling",
+    "question": "Is honesty more important than loyalty?"
+  },
+  {
+    "kind": "debate",
+    "category": "ethics",
+    "difficulty": "easy",
+    "question": "Should moral rules vary by culture?"
+  },
+  {
+    "kind": "debate",
+    "category": "technology",
+    "difficulty": "easy",
+    "question": "Should AI-written code be labeled in commercial software?"
+  },
+  {
+    "kind": "debate",
+    "category": "technology",
+    "difficulty": "2 braincells needed",
+    "question": "Should AI companies pay creators whose work trained their models?"
+  },
+  {
+    "kind": "debate",
+    "category": "technology",
+    "difficulty": "mind boggling",
+    "question": "Would banning anonymous social media accounts improve the internet?"
+  },
+  {
+    "kind": "debate",
+    "category": "technology",
+    "difficulty": "easy",
+    "question": "Should people have a right to speak with a human instead of a chatbot?"
+  },
+  {
+    "kind": "debate",
+    "category": "technology",
+    "difficulty": "2 braincells needed",
+    "question": "Should schools teach prompt engineering as a core skill?"
+  },
+  {
+    "kind": "debate",
+    "category": "technology",
+    "difficulty": "mind boggling",
+    "question": "Should personal data be treated as private property?"
+  },
+  {
+    "kind": "debate",
+    "category": "technology",
+    "difficulty": "easy",
+    "question": "Should AI-generated misinformation carry stronger penalties?"
+  },
+  {
+    "kind": "debate",
+    "category": "technology",
+    "difficulty": "2 braincells needed",
+    "question": "Should every device have a user-repairable design?"
+  },
+  {
+    "kind": "debate",
+    "category": "technology",
+    "difficulty": "mind boggling",
+    "question": "Should governments limit facial recognition in public places?"
+  },
+  {
+    "kind": "debate",
+    "category": "technology",
+    "difficulty": "easy",
+    "question": "Does faster technology always mean a better quality of life?"
+  },
+  {
+    "kind": "debate",
+    "category": "society",
+    "difficulty": "easy",
+    "question": "Should homework be optional?"
+  },
+  {
+    "kind": "debate",
+    "category": "society",
+    "difficulty": "2 braincells needed",
+    "question": "Should students vote on school rules?"
+  },
+  {
+    "kind": "debate",
+    "category": "society",
+    "difficulty": "mind boggling",
+    "question": "Should standardized testing be eliminated?"
+  },
+  {
+    "kind": "debate",
+    "category": "society",
+    "difficulty": "easy",
+    "question": "Should public libraries lend games and electronics?"
+  },
+  {
+    "kind": "debate",
+    "category": "society",
+    "difficulty": "2 braincells needed",
+    "question": "Should cities ban most private cars from downtown areas?"
+  },
+  {
+    "kind": "debate",
+    "category": "society",
+    "difficulty": "mind boggling",
+    "question": "Should universities be free to attend?"
+  },
+  {
+    "kind": "debate",
+    "category": "society",
+    "difficulty": "easy",
+    "question": "Should a four-day school week become standard?"
+  },
+  {
+    "kind": "debate",
+    "category": "society",
+    "difficulty": "2 braincells needed",
+    "question": "Should public figures be held to higher standards than everyone else?"
+  },
+  {
+    "kind": "debate",
+    "category": "society",
+    "difficulty": "mind boggling",
+    "question": "Should volunteer work count toward school grades?"
+  },
+  {
+    "kind": "debate",
+    "category": "society",
+    "difficulty": "easy",
+    "question": "Are online friendships as meaningful as in-person friendships?"
+  },
+  {
+    "kind": "debate",
+    "category": "science",
+    "difficulty": "easy",
+    "question": "Should research funding prioritize practical inventions over pure curiosity?"
+  },
+  {
+    "kind": "debate",
+    "category": "science",
+    "difficulty": "2 braincells needed",
+    "question": "Should we attempt to terraform Mars?"
+  },
+  {
+    "kind": "debate",
+    "category": "science",
+    "difficulty": "mind boggling",
+    "question": "Should gene-edited crops be treated differently from conventional crops?"
+  },
+  {
+    "kind": "debate",
+    "category": "science",
+    "difficulty": "easy",
+    "question": "Should advanced robots explore dangerous places instead of humans?"
+  },
+  {
+    "kind": "debate",
+    "category": "science",
+    "difficulty": "2 braincells needed",
+    "question": "Should scientists announce uncertain discoveries immediately?"
+  },
+  {
+    "kind": "debate",
+    "category": "science",
+    "difficulty": "mind boggling",
+    "question": "Should climate interventions be tested even if they have unknown risks?"
+  },
+  {
+    "kind": "debate",
+    "category": "science",
+    "difficulty": "easy",
+    "question": "Is it more important to preserve biodiversity or maximize food production?"
+  },
+  {
+    "kind": "debate",
+    "category": "science",
+    "difficulty": "2 braincells needed",
+    "question": "Should humanity create a backup archive of civilization on the Moon?"
+  },
+  {
+    "kind": "debate",
+    "category": "science",
+    "difficulty": "mind boggling",
+    "question": "Should scientific knowledge ever be patented?"
+  },
+  {
+    "kind": "debate",
+    "category": "science",
+    "difficulty": "easy",
+    "question": "Should research into human lifespan extension be a top priority?"
+  },
+  {
+    "kind": "debate",
+    "category": "gaming",
+    "difficulty": "easy",
+    "question": "Should esports be treated like traditional sports?"
+  },
+  {
+    "kind": "debate",
+    "category": "gaming",
+    "difficulty": "2 braincells needed",
+    "question": "Should games use AI-generated NPC dialogue?"
+  },
+  {
+    "kind": "debate",
+    "category": "gaming",
+    "difficulty": "mind boggling",
+    "question": "Should game publishers be required to preserve online games after shutdown?"
+  },
+  {
+    "kind": "debate",
+    "category": "gaming",
+    "difficulty": "easy",
+    "question": "Should loot boxes be banned in games aimed at children?"
+  },
+  {
+    "kind": "debate",
+    "category": "gaming",
+    "difficulty": "2 braincells needed",
+    "question": "Should every game offer cross-platform multiplayer?"
+  },
+  {
+    "kind": "debate",
+    "category": "gaming",
+    "difficulty": "mind boggling",
+    "question": "Should speedrunning exploits count as legitimate strategies?"
+  },
+  {
+    "kind": "debate",
+    "category": "gaming",
+    "difficulty": "easy",
+    "question": "Should games reward exploration more than completing objectives?"
+  },
+  {
+    "kind": "debate",
+    "category": "gaming",
+    "difficulty": "2 braincells needed",
+    "question": "Should players be able to refund a game after finishing it?"
+  },
+  {
+    "kind": "debate",
+    "category": "gaming",
+    "difficulty": "mind boggling",
+    "question": "Should multiplayer games allow optional proximity voice chat?"
+  },
+  {
+    "kind": "debate",
+    "category": "gaming",
+    "difficulty": "easy",
+    "question": "Should developers prioritize performance over graphical realism?"
+  },
+  {
+    "kind": "debate",
+    "category": "hypotheticals",
+    "difficulty": "easy",
+    "question": "If teleportation made a copy while destroying the original, should it be legal?"
+  },
+  {
+    "kind": "debate",
+    "category": "hypotheticals",
+    "difficulty": "2 braincells needed",
+    "question": "If you could rewind every argument once, should you?"
+  },
+  {
+    "kind": "debate",
+    "category": "hypotheticals",
+    "difficulty": "mind boggling",
+    "question": "If a perfect virtual teacher existed, should schools still employ human teachers?"
+  },
+  {
+    "kind": "debate",
+    "category": "hypotheticals",
+    "difficulty": "easy",
+    "question": "If you could see one possible future, should you be allowed to change it?"
+  },
+  {
+    "kind": "debate",
+    "category": "hypotheticals",
+    "difficulty": "2 braincells needed",
+    "question": "If all languages were instantly translated, would we lose something valuable?"
+  },
+  {
+    "kind": "debate",
+    "category": "hypotheticals",
+    "difficulty": "mind boggling",
+    "question": "If robots could do every job, should people still be expected to work?"
+  },
+  {
+    "kind": "debate",
+    "category": "hypotheticals",
+    "difficulty": "easy",
+    "question": "If everyone received the same salary, would society become fairer?"
+  },
+  {
+    "kind": "debate",
+    "category": "hypotheticals",
+    "difficulty": "2 braincells needed",
+    "question": "If people could vote on every law directly, should representative government end?"
+  },
+  {
+    "kind": "debate",
+    "category": "hypotheticals",
+    "difficulty": "mind boggling",
+    "question": "If you could save all of humanity's knowledge but only one culture's art, how should you decide?"
+  },
+  {
+    "kind": "debate",
+    "category": "hypotheticals",
+    "difficulty": "easy",
+    "question": "If a city could be perfectly managed by an algorithm, should citizens give it control?"
   }
 ]
 const KINDS = new Set(['debate', 'philosophy'])
