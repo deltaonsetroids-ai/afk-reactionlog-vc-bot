@@ -3,6 +3,7 @@
 // replaces this bot's commands in those guilds, never global ones.
 require('dotenv').config()
 const { REST, Routes, SlashCommandBuilder } = require('discord.js')
+const conversation = require('../commands/conversation')
 
 const token = process.env.DISCORD_BOT_TOKEN
 const clientId = process.env.DISCORD_CLIENT_ID
@@ -12,6 +13,13 @@ if (!token || !clientId || !guilds.length) {
   process.exit(1)
 }
 
+const promptCommands = ['debate', 'philosophy'].map((kind) => new SlashCommandBuilder()
+  .setName(kind)
+  .setDescription(kind === 'debate' ? 'Start a debate with a random topic' : 'Get a thought-provoking philosophy question')
+  .addStringOption((o) => o.setName('category').setDescription('Topic category')
+    .addChoices(...conversation.CATEGORIES[kind].map((c) => ({ name: c, value: c }))))
+  .addStringOption((o) => o.setName('difficulty').setDescription('Question difficulty')
+    .addChoices(...conversation.LEVELS.map((d) => ({ name: d, value: d })))))
 const body = [
   new SlashCommandBuilder()
     .setName('afk')
@@ -25,7 +33,7 @@ const body = [
         .addChannelOption((o) => o.setName('channel').setDescription('Channel to post reaction logs to').setRequired(true)))
     .addSubcommand((s) => s.setName('off').setDescription('Turn reaction logging off'))
     .addSubcommand((s) => s.setName('show').setDescription('Show the current reaction-log config')),
-].map((c) => c.toJSON())
+, ...promptCommands].map((c) => c.toJSON())
 
 const rest = new REST().setToken(token)
 ;(async () => {
