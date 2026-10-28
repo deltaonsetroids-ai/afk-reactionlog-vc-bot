@@ -33,7 +33,8 @@ const body = [
         .addChannelOption((o) => o.setName('channel').setDescription('Channel to post reaction logs to').setRequired(true)))
     .addSubcommand((s) => s.setName('off').setDescription('Turn reaction logging off'))
     .addSubcommand((s) => s.setName('show').setDescription('Show the current reaction-log config')),
-, ...promptCommands].map((c) => c.toJSON())
+  ...promptCommands,
+].map((c) => c.toJSON())
 
 const rest = new REST().setToken(token)
 ;(async () => {
